@@ -1,0 +1,43 @@
+{
+  "name": "react-back",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "babel src -d dist",
+    "start": "npm run build && set NODE_ENV=production && node ./dist/index.js",
+    "dev": "nodemon ./src/index.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
+    "cookie-parser": "~1.4.4",
+    "cookieparser": "^0.1.0",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.16.4",
+    "express-rate-limit": "^5.2.6",
+    "helmet": "^4.6.0",
+    "http-errors": "~1.6.3",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "~1.9.1",
+    "mysql": "^2.18.1",
+    "nocache": "^3.0.1",
+    "redis": "^3.1.2",
+    "request": "^2.88.2",
+    "tspace-orm": "1.1.4",
+    "tspace-validator": "1.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.13.16",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-proposal-private-methods": "^7.13.0",
+    "@babel/preset-env": "^7.14.7",
+    "babel-minify": "^0.5.1",
+    "nodemon": "^2.0.4"
+  }
+}
